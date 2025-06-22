@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoNex GP – AI for Green Procurement</title>
+  <title>EcoNex – Operating System for Sustainability</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <script>
@@ -22,17 +22,17 @@
           },
           animation: {
             'fade-in': 'fadeIn 0.8s ease-out forwards',
-            'drift': 'drift 20s ease-in-out infinite',
+            'drift': 'drift 20s ease-in-out infinite'
           },
           keyframes: {
             fadeIn: {
               '0%': { opacity: '0', transform: 'translateY(20px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
             },
             drift: {
               '0%, 100%': { transform: 'translateX(0) translateY(0)' },
-              '50%': { transform: 'translateX(-50px) translateY(-100px)' },
-            },
+              '50%': { transform: 'translateX(-50px) translateY(-100px)' }
+            }
           }
         }
       }
@@ -49,12 +49,6 @@
                   radial-gradient(circle at 80% 80%, rgba(14, 228, 252, 0.08) 0%, transparent 50%),
                   radial-gradient(circle at 40% 90%, rgba(14, 228, 252, 0.04) 0%, transparent 50%);
     }
-    .minimal-grid {
-      background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
-      background-size: 60px 60px;
-    }
     .floating-orb {
       position: absolute;
       border-radius: 50%;
@@ -65,96 +59,59 @@
 </head>
 
 <body class="bg-darkbg text-lightgray font-sans overflow-x-hidden">
-  <!-- Background effects -->
   <div class="fixed inset-0 mesh-gradient"></div>
-  <div class="fixed inset-0 minimal-grid opacity-30"></div>
   <div class="floating-orb w-96 h-96 top-1/4 -left-48 animate-drift"></div>
   <div class="floating-orb w-72 h-72 top-3/4 -right-36 animate-drift"></div>
 
-  <!-- Navigation -->
   <header class="relative z-10 px-6 py-8">
     <nav class="max-w-7xl mx-auto flex justify-between items-center">
       <div class="flex items-center space-x-3">
-        <!-- Use your Nexus Climate logo, adjust src as needed -->
-        <img src="https://raw.githubusercontent.com/nexusclimate/Clear/main/NEXUS%20Main.png" alt="Nexus Climate Logo" class="h-10 opacity-80" />
-        <span class="text-2xl font-bold text-accent tracking-tight">EcoNex GP</span>
+        <span class="text-2xl font-bold text-accent tracking-tight">EcoNex</span>
       </div>
-      <div class="hidden md:flex space-x-6 text-base text-lightgray/80">
-        <a href="#mission" class="hover:text-white">Mission</a>
-        <a href="#vision" class="hover:text-white">Vision</a>
+      <div class="hidden md:flex space-x-6 text-base text-lightgray/80 items-center">
         <a href="#platform" class="hover:text-white">Platform</a>
+        <div class="relative group">
+          <button class="hover:text-white focus:outline-none">Initiatives ▾</button>
+          <div class="absolute hidden group-hover:block bg-darkbg text-lightgray border border-white/10 mt-2 rounded-md shadow-lg">
+            <a href="https://gp.econex.ai.nexusclimate.ae/" target="_blank" class="block px-4 py-2 hover:bg-softblue hover:text-darkbg transition">Green Procurement</a>
+          </div>
+        </div>
         <a href="#contact" class="hover:text-white">Contact</a>
+        <a href="mailto:econex@nexusclimate.ae" class="bg-softblue text-darkbg font-semibold py-2 px-4 rounded hover:opacity-90">Join the Journey</a>
       </div>
     </nav>
   </header>
 
-  <!-- Hero -->
   <section class="relative z-10 text-center px-6 py-20 max-w-4xl mx-auto animate-fade-in">
     <h1 class="text-5xl md:text-7xl font-light text-lightgray leading-tight mb-6">
-      EcoNex GP
+      EcoNex
     </h1>
     <p class="text-accent font-medium text-xl mb-2">
-      AI for Green Procurement—Powered by EcoNex
+      The Operating System for Sustainable Applications
     </p>
     <p class="text-lightgray/70 text-xl max-w-2xl mx-auto mt-6">
-      The next-generation digital platform for sustainable construction procurement, delivering transparency, data-driven decision-making, and measurable carbon impact across your entire supply chain.
+      Solving complex challenges with intelligent use cases—EcoNex leverages advanced algorithms to accelerate decarbonisation across sectors.
     </p>
-  </section>
-
-  <!-- Mission / Vision / Approach -->
-  <section class="relative z-10 max-w-6xl mx-auto px-6 py-16 grid gap-8 md:grid-cols-3" id="mission">
-    <div class="glass p-6 rounded-2xl">
-      <h3 class="text-2xl font-semibold text-lightgray mb-2">Mission</h3>
-      <p class="text-lightgray/70 text-base">
-        Transform the construction sector by unifying data, digitizing procurement, and enabling low-carbon choices for a resilient built environment in the Middle East and Africa.
-      </p>
-    </div>
-    <div class="glass p-6 rounded-2xl" id="vision">
-      <h3 class="text-2xl font-semibold text-lightgray mb-2">Vision</h3>
-      <p class="text-lightgray/70 text-base">
-        A future where every project and every supplier is empowered to achieve ambitious sustainability targets—seamlessly, collaboratively, and with accountability.
-      </p>
-    </div>
-    <div class="glass p-6 rounded-2xl">
-      <h3 class="text-2xl font-semibold text-lightgray mb-2">Approach</h3>
-      <p class="text-lightgray/70 text-base">
-        Integrate AI, verified carbon data, and unified standards to drive green procurement at every stage—concept, design, tender, construction, and lifecycle management.
-      </p>
+    <div class="my-12">
+      <img src="https://github.com/nexusclimate/EcoNex/raw/main/model.png" alt="EcoNex Software Layer Stack" class="mx-auto w-64 md:w-80 rounded-lg shadow-xl" />
+      <p class="text-lightgray/50 text-sm mt-4">Software Core – Intelligence Layer with Green Procurement App</p>
     </div>
   </section>
 
-  <!-- Platform Highlights -->
-  <section class="relative z-10 px-6 py-16 max-w-6xl mx-auto" id="platform">
-    <h2 class="text-3xl font-semibold text-lightgray text-center mb-12">Platform Highlights</h2>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-      <div class="glass p-5 text-center rounded-2xl">
-        <h4 class="text-2xl text-accent font-bold">Unified Data Flow</h4>
-        <p class="text-lightgray/70 text-base mt-2">
-          End-to-end integration from land acquisition and design to procurement and facility management.
-        </p>
-      </div>
-      <div class="glass p-5 text-center rounded-2xl">
-        <h4 class="text-2xl text-accent font-bold">AI-Driven Insights</h4>
-        <p class="text-lightgray/70 text-base mt-2">
-          Intelligent recommendations for material selection, carbon footprint, and cost optimization.
-        </p>
-      </div>
-      <div class="glass p-5 text-center rounded-2xl">
-        <h4 class="text-2xl text-accent font-bold">Green Standards Ready</h4>
-        <p class="text-lightgray/70 text-base mt-2">
-          Streamlined compliance with LEED, local, and global green procurement standards.
-        </p>
-      </div>
-      <div class="glass p-5 text-center rounded-2xl">
-        <h4 class="text-2xl text-accent font-bold">Supply Chain Transparency</h4>
-        <p class="text-lightgray/70 text-base mt-2">
-          Verified, real-time tracking of suppliers’ carbon data, EPDs, and project lifecycle impacts.
-        </p>
-      </div>
-    </div>
+  <section id="projects" class="relative z-10 px-6 pt-6 pb-16 max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold text-lightgray mb-4">Our First Project</h2>
+    <p class="text-xl text-accent font-medium">
+      <a href="https://gp.econex.ai.nexusclimate.ae/" target="_blank" class="hover:text-softblue transition">Green Procurement</a>
+    </p>
+    <p class="text-lightgray/70 mt-4">Empowering sustainable sourcing through data transparency and AI-driven selection tools.</p>
   </section>
 
-  <!-- Footer -->
+  <section class="relative z-10 px-6 py-20 max-w-4xl mx-auto text-center">
+    <h3 class="text-2xl font-semibold text-lightgray mb-4">Ready to Shape the Future?</h3>
+    <p class="text-lightgray/70 text-lg mb-6">Join our mission to build sustainable solutions through intelligent design and data-driven innovation.</p>
+    <a href="mailto:econex@nexusclimate.ae" class="inline-block bg-softblue text-darkbg font-semibold py-3 px-6 rounded-lg hover:opacity-90 transition">Join the Journey</a>
+  </section>
+
   <footer class="relative z-10 border-t border-white/10 mt-24 px-6 py-10 flex flex-col md:flex-row justify-between items-start md:items-center max-w-7xl mx-auto" id="contact">
     <div class="mb-6 md:mb-0">
       <p class="text-lightgray/70 text-base mb-2">
@@ -165,7 +122,7 @@
     </div>
     <div class="text-right">
       <p class="text-lightgray/70 text-base">Email: <a href="mailto:econex@nexusclimate.ae" class="text-accent hover:underline">econex@nexusclimate.ae</a></p>
-      <p class="text-lightgray/60 text-base mt-1">© 2025 EcoNex GP</p>
+      <p class="text-lightgray/60 text-base mt-1">© 2025 EcoNex</p>
     </div>
   </footer>
 </body>
