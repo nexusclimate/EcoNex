@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoNex x Green Procurement</title>
+  <title>Green Procurement</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <script>
@@ -49,6 +49,12 @@
                   radial-gradient(circle at 80% 80%, rgba(14, 228, 252, 0.08) 0%, transparent 50%),
                   radial-gradient(circle at 40% 90%, rgba(14, 228, 252, 0.04) 0%, transparent 50%);
     }
+    .minimal-grid {
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
     .floating-orb {
       position: absolute;
       border-radius: 50%;
@@ -57,87 +63,96 @@
     }
   </style>
 </head>
-<body class="bg-darkbg text-lightgray font-sans overflow-x-hidden">
+
+<body class="bg-darkbg text-lightgray font-sans overflow-x-hidden h-screen">
   <div class="fixed inset-0 mesh-gradient"></div>
+  <div class="fixed inset-0 minimal-grid opacity-30"></div>
   <div class="floating-orb w-96 h-96 top-1/4 -left-48 animate-drift"></div>
   <div class="floating-orb w-72 h-72 top-3/4 -right-36 animate-drift"></div>
 
-  <header class="relative z-10 px-6 py-8">
+  <!-- Navigation -->
+  <header class="relative z-10 px-6 py-4">
     <nav class="max-w-7xl mx-auto flex justify-between items-center">
-      <div class="flex items-center space-x-3">
-        <span class="text-2xl font-bold text-accent tracking-tight">EcoNex x Green Procurement</span>
-      </div>
-      <div class="hidden md:flex space-x-6 text-base text-lightgray/80 items-center">
-        <a href="mailto:econex@nexusclimate.ae" class="bg-accent text-darkbg font-semibold py-2 px-4 rounded hover:opacity-90">Join the Journey</a>
-      </div>
+      <span class="text-2xl font-bold text-accent tracking-tight">Green Procurement</span>
+      <a href="mailto:econex@nexusclimate.ae" class="bg-accent text-darkbg font-semibold py-2 px-4 rounded hover:opacity-90">Join the Journey</a>
     </nav>
   </header>
 
-  <section class="relative z-10 text-center px-6 py-20 max-w-4xl mx-auto animate-fade-in">
-    <h1 class="text-5xl md:text-7xl font-light text-lightgray leading-tight mb-6">
-      EcoNex x Green Procurement
+  <!-- Hero -->
+  <section class="relative z-10 text-center px-6 py-8 max-w-4xl mx-auto animate-fade-in">
+    <h1 class="text-5xl md:text-6xl font-light text-lightgray leading-tight mb-4">
+      Green Procurement powered by AI
     </h1>
     <p class="text-accent font-medium text-xl mb-2">
-      Transforming construction procurement through sustainable intelligence
+      Green Procurement—Powered by EcoNex
     </p>
-    <p class="text-lightgray/70 text-xl max-w-2xl mx-auto mt-6">
-      Delivering transparency, intelligent insights, and measurable carbon savings across every stage of your construction supply chain.
+    <p class="text-lightgray/70 text-xl max-w-2xl mx-auto mt-4">
+      The next-generation digital platform for sustainable construction procurement, delivering transparency, data-driven decision-making, and measurable carbon impact across your entire supply chain.
     </p>
   </section>
 
-  <section class="relative z-10 max-w-6xl mx-auto px-6 py-16 grid gap-8 md:grid-cols-2" id="challenges">
+  <!-- Challenges / Solutions -->
+  <section class="relative z-10 max-w-6xl mx-auto px-6 py-12 grid gap-8 md:grid-cols-2" id="challenges">
     <div class="glass p-6 rounded-2xl">
       <h3 class="text-2xl font-semibold text-lightgray mb-2">Challenges</h3>
       <p class="text-lightgray/70 text-base">
-        Fragmented supplier ecosystems, lack of transparency, and manual processes make low-carbon procurement difficult to achieve and verify.
+        Procurement remains fragmented, carbon data is inconsistent, and suppliers lack alignment on sustainability goals.
       </p>
     </div>
     <div class="glass p-6 rounded-2xl">
       <h3 class="text-2xl font-semibold text-lightgray mb-2">Solution</h3>
       <p class="text-lightgray/70 text-base">
-        EcoNex combines AI, verified data, and intuitive workflows to streamline sustainable procurement—empowering every project with real-time intelligence.
+        EcoNex unifies data, applies AI, and empowers procurement leaders with tools to drive transparency, efficiency, and decarbonisation.
       </p>
     </div>
   </section>
 
-  <section class="relative z-10 px-6 py-16 max-w-6xl mx-auto" id="platform">
-    <h2 class="text-3xl font-semibold text-lightgray text-center mb-12">Platform Highlights</h2>
+  <!-- Platform Highlights -->
+  <section class="relative z-10 px-6 py-12 max-w-6xl mx-auto" id="platform">
+    <h2 class="text-3xl font-semibold text-lightgray text-center mb-8">Platform Highlights</h2>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
       <div class="glass p-5 text-center rounded-2xl">
         <h4 class="text-2xl text-accent font-bold">Unified Data Flow</h4>
         <p class="text-lightgray/70 text-base mt-2">
-          End-to-end integration from land acquisition to lifecycle management.
+          End-to-end integration from land acquisition and design to procurement and facility management.
         </p>
       </div>
       <div class="glass p-5 text-center rounded-2xl">
         <h4 class="text-2xl text-accent font-bold">AI-Driven Insights</h4>
         <p class="text-lightgray/70 text-base mt-2">
-          Automated recommendations for materials, emissions, and compliance.
+          Intelligent recommendations for material selection, carbon footprint, and cost optimisation.
         </p>
       </div>
       <div class="glass p-5 text-center rounded-2xl">
         <h4 class="text-2xl text-accent font-bold">Green Standards Ready</h4>
         <p class="text-lightgray/70 text-base mt-2">
-          Seamless alignment with LEED and regional procurement frameworks.
+          Streamlined compliance with LEED, local, and global green procurement standards.
         </p>
       </div>
       <div class="glass p-5 text-center rounded-2xl">
         <h4 class="text-2xl text-accent font-bold">Supply Chain Transparency</h4>
         <p class="text-lightgray/70 text-base mt-2">
-          Real-time access to supplier carbon data and verified declarations.
+          Verified, real-time tracking of suppliers’ carbon data, EPDs, and project lifecycle impacts.
         </p>
       </div>
     </div>
   </section>
 
-  <footer class="relative z-10 border-t border-white/10 mt-24 px-6 py-10 flex flex-col md:flex-row justify-between items-start md:items-center max-w-7xl mx-auto" id="contact">
+  <!-- Footer -->
+  <footer class="relative z-10 border-t border-white/10 mt-16 px-6 py-10 flex flex-col md:flex-row justify-between items-start md:items-center max-w-7xl mx-auto" id="contact">
     <div class="mb-6 md:mb-0">
       <p class="text-lightgray/70 text-base mb-2">
-        Return to <a href="https://econex.ai.nexusclimate.ae/" target="_blank" class="text-accent hover:underline">EcoNex Platform</a>
+        An initiative from 
+        <a href="https://nexusclimate.vc" target="_blank" class="text-accent hover:underline">Nexus Climate</a>
+      </p>
+      <p class="text-lightgray/70 text-base">
+        Visit <a href="https://econex.ai.nexusclimate.ae/" target="_blank" class="hover:underline text-lightgray">EcoNex</a> for more.
       </p>
     </div>
     <div class="text-right">
-      <p class="text-lightgray/70 text-base">Email: <a href="mailto:econex@nexusclimate.ae" class="text-accent hover:underline">econex@nexusclimate.ae</a></p>
+      <p class="text-lightgray/70 text-base">Email: 
+        <a href="mailto:econex@nexusclimate.ae" class="text-accent hover:underline">econex@nexusclimate.ae</a>
+      </p>
       <p class="text-lightgray/60 text-base mt-1">© 2025 EcoNex</p>
     </div>
   </footer>
